@@ -2,31 +2,39 @@
     <head>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../nathans/style.css">
-        <script defer src="../nathans/animation.js"></script>
         <script defer src="../nathans/graphs.js"></script>
     </head>
     <body>
-        <div class="small-section">
-            <h1 class="head">Finance Performance</h1>
-            <div class="body">
-                <div id="finance-performance-graph" class="bar-graph">
-                    <div class="head">
-                        
-                    </div>
-                    <div class="body">
-                        <div class="bars">
-                            <div style="display: none;">
-                                <div class="bar-element">
-                                    <div class="bar">
-                                        <div class="bar-grow"></div>
+        <div class="bottom-section">
+            <div class="small-section">
+                <h1 class="head">Finance Performance</h1>
+                <div class="body design">
+                    <div id="finance-performance-graph" class="bar-graph">
+                        <div class="head">
+                            
+                        </div>
+                        <div class="body">
+                            <div class="bars js-loadin">
+                                <div style="display: none;">
+                                    <div class="bar-element js-loadin-demo">
+                                        <div class="bar">
+                                            <div class="bar-grow"></div>
+                                        </div>
+                                        <div class="week-day"></div>
                                     </div>
-                                    <div class="week-day"></div>
                                 </div>
+                                <div class="js-loadin-void">...</div>
                             </div>
-                            <div class="js-void"><span class="load">JS</span></div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="small-section">
+                <h1 class="head">TOP Performers</h1>
+                <div class="list-down"></div>
+            </div>
+            <div class="small-section">
+                <h1 class="head">Targeting by region</h1>
             </div>
         </div>
     </body>
