@@ -14,8 +14,8 @@ body {
     height: 700px;
     width: auto;
     margin-top: 100px;
-    margin-left: 10%;
-    margin-right: 2%;
+    margin-left: 15%;
+    margin-right: 6%;
     border-radius: 25px;
     padding: 3%;
 
@@ -27,6 +27,7 @@ body {
             background-image: linear-gradient(to bottom right, #3289A0, #EECCBA);
             height: 300px;
             width: 50%;
+            position: relative;
             border-radius: 25px;
             padding: 3%;
         }
@@ -60,12 +61,40 @@ body {
         .visitors .fullStat {
             background-color: #2A7B97;
             color: black;
+            border-radius: 25px 0px;
             position: absolute;
-            left: 50%;
-            bottom: 40%;
+            right: -20px;
+            bottom: -20spx;
             height: 80px;
-            width: 300px;
-            margin: 30px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .fullStat span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: fit-content;
+            font-weight: 900;
+        }
+
+        .guy img {
+            position: absolute;
+            bottom: 0%;
+            right: 6%;;
+            width: 43%;
+        }
+
+        .popular {
+            background-color: #EECCBA;
+            height: 29%;
+            width: 20%;
+            position:absolute;
+            right: 10%;
+            top: 16%;
+            border-radius: 25px;
+            padding: 3%;
         }
     }
 }
