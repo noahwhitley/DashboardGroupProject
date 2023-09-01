@@ -1,0 +1,39 @@
+.bar-graph {
+    width: 400px;
+    .bars {
+        display: flex;
+        gap: 5px;
+        .bar-element {
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .bar {
+                height: 80px;
+                width: 10px;
+                border-radius: 15px;
+                overflow: hidden;
+                background-color: lightgrey;
+                display: flex;
+                justify-content: center;
+                .bar-grow {
+                    align-self: flex-end;
+                    height: 50%;
+                    width: 100%;
+                    background-color: #40AED9;
+                    background-image: linear-gradient(0deg, #40AED9, #144758);
+                }
+            }
+        }
+    }
+}
+
+.js-void {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    .load {
+        rotate: 360deg;
+        transition: rotate Infinite 3s;
+    }
+}
