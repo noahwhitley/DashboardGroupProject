@@ -3,57 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DashBoard</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d706230aa8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="top"></div>
     <div class="mainContainer">
-        <div class="sidenav">
-
-        </div>
-        <div class="topnav">
-            
-        </div>
-        <div class="contentContainer">
-            <div class="topContainer">
-                <div class="visitors">
-                    <span>Visits for today</span>
-                    <h1>824</h1>
-                    <div class="icons">
-                        <ul>
-                            <li>
-                                <img src="/images/starballs.png">
-                                <div class="iconText">
-                                    <span>Popularity</span>
-                                    <span class="numba">93</span>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="/images/stoks.png">
-                                <div class="iconText">
-                                    <span>General rate</span>
-                                    <span class="numba">4.7</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="guy">
-                        <img src="/images/guy.png">
-                    </div>
-                    <div class="fullStat">
-                        <span>VIEW FULL STATISTIC  &#62</span>
-                    </div>
+        <div class="sideBar">
+            <div class="logo">
+                <img src="images/icon.png">
+            </div>
+            <div class="sidemenu">
+                <div class="logoContainer">
+                    <div class="fa-solid fa-chart-simple" style="color: #FFFFFF;"></div>
+                    <p class="sidemenutext">Rate</p>
                 </div>
-
-                <div class="popular">
-
+                <div class="logoContainer">
+                    <div id="star" class="fa-solid fa-star" style="color: #547C8C;"></div>
+                    <p class="sidemenutext">Overview</p>
+                </div>
+                <div class="logoContainer">
+                    <div class="fa-solid fa-message" style="color: #FFFFFF;"></div>
+                    <p class="sidemenutext">Reports</p>
+                </div>
+                <div class="logoContainer">
+                    <div class="fa-solid fa-gear" style="color: #FFFFFF;"></div>
+                    <p class="sidemenutext">Settings</p>
                 </div>
             </div>
-            <div class="bottomContainer">
-
+            <div class="user">
+            </div>
+        </div>
+        <div class="contentContainer">
+            <div class="topNav">
+                <div class="backbutton">
+                    <div class="fa-solid fa-chevron-left fa-l" style="color: black;"></div>
+                    <p>Back</p>
+                </div>
+                <div class="websitenav">
+                    <a href="index.html">DASHBOARD</a>
+                    <a href="insights.html">INSIGHTS</a>
+                    <a href="#">CHANNELS</a>
+                </div>
+                <div class="memberContainer">
+                    <div class="member"></div>
+                    <div class="member"></div>
+                    <div class="member"></div>
+                    <p>12<span>members</span></p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="topcontainer">
+                    <div class="visitors">
+                        <span>Visits for today</span>
+                        <h1>824</h1>
+                        <div class="icons">
+                            <ul>
+                                <li>
+                                    <img src="/images/starballs.png">
+                                    <div class="iconText">
+                                        <span>Popularity</span>
+                                        <span class="numba">93</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="/images/stoks.png">
+                                    <div class="iconText">
+                                        <span>General rate</span>
+                                        <span class="numba">4.7</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="guy">
+                            <img src="../images/guy.png">
+                        </div>
+                        <div class="fullStat">
+                            <span>VIEW FULL STATISTIC  &#62</span>
+                        </div>
+                    </div>
+                    <div class="popular">
+                    </div>
+                    <div class="popularitycontainer">
+                    </div>
+                </div>
+                <div class="bottomcontainer">
+                </div>
             </div>
         </div>
     </div>
