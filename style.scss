@@ -15,13 +15,14 @@ body {
     justify-content: center;
 }
 .mainContainer{
-    height: 120%;
+    height: 100%;
     width: 70%;
+    margin: auto 50px;
     display: flex;
     justify-content: center;
 }
 .sideBar {
-    height: 80%;
+    height: 90%;
     width: 7%;
     background-image: linear-gradient(#4D7283, #698089 ) ;
     display: flex;
@@ -52,7 +53,7 @@ body {
     font-size: 10px;
 }
 .contentContainer {
-    height: 80%;
+    height: 90%;
     width: 90%;
     background-image: linear-gradient(#4D7283, #698089 );
     border-top-right-radius: 30px;
