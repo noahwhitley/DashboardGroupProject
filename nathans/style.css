@@ -1,17 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #4D7383;
+}
+
 .bar-graph {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex: 1 1 400px;
   width: 400px;
+}
+.bar-graph .head {
+  justify-content: space-between;
+  display: flex;
+}
+.bar-graph .head .left {
+  justify-content: flex-start;
+}
+.bar-graph .head .right {
+  justify-content: flex-end;
+}
+.bar-graph .head .left, .bar-graph .head .right {
+  display: flex;
+  flex: 1 1 1;
+  align-content: center;
+  align-items: center;
+}
+.bar-graph .head .symbol {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font: bold;
+  background-color: #2B7B97;
+  margin: 15px;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+.bar-graph .head .described-value {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  margin-left: 10px;
+}
+.bar-graph .head .space {
+  flex: 1 1 1;
+}
+.bar-graph .head .calander {
+  background-color: white;
+  margin: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: lightgrey;
+}
+.bar-graph .body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .bar-graph .bars {
   display: flex;
   gap: 5px;
+  flex: 1 0 100px;
+  padding: 50px 10px;
 }
 .bar-graph .bars .bar-element {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 .bar-graph .bars .bar-element .bar {
+  flex: 1 0 80px;
   height: 80px;
   width: 10px;
   border-radius: 30px;
@@ -51,11 +124,15 @@
 }
 .bottom-section .small-section {
   flex: 1 0 400px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   padding: 20px;
   background-color: white;
 }
 .bottom-section .small-section .body.design {
   display: flex;
+  flex: 1 0 300px;
   justify-content: center;
   border-radius: 30px;
   background-color: rgba(211, 211, 211, 0.3);
