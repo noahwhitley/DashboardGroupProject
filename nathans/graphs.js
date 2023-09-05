@@ -107,7 +107,7 @@ function runGraphs(){
     ]);
     animateBars(data, 1);
 
-    // for debug and use
+    // for debug and usage
     window.runAnimation = runAnimation;
     window.getLoadin = getLoadin;
 }
