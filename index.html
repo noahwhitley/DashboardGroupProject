@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <script defer src="./js/graphs.js"></script>
 </head>
 <body>
     <div class="top"></div>
@@ -36,7 +37,7 @@
                 </div>
             </div>
             <div class="user">
-
+                <img src="./images/user.png">
             </div>
         </div>
         <div class="contentContainer">
@@ -51,9 +52,15 @@
                     <a href="#">CHANNELS</a>
                 </div>
                 <div class="memberContainer">
-                    <div class="member"></div>
-                    <div class="member"></div>
-                    <div class="member"></div>
+                    <div class="member">
+                        <img src="./images/user.png">
+                    </div>
+                    <div class="member">
+                        <img src="./images/user.png">
+                    </div>
+                    <div class="member">
+                        <img src="./images/user.png">
+                    </div>
                     <p>12<span>members</span></p>
                 </div>
                 
@@ -89,7 +96,125 @@
                     </div>
                 </div>
                 <div class="bottomcontainer">
-                    
+
+                    <div class="small-section">
+                        <h1 class="head">Finance Performance</h1>
+                        <div class="body design">
+                            <div id="finance-performance-graph" class="bar-graph">
+                                <div class="spaced head">
+                                    <div class="left">
+                                        <div class="symbol">$</div>
+                                        <div class="described-value">
+                                            <span>10 000</span>
+                                            <span class="descriptor">Monthly Income</span>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="calander icon">
+                                            <img width=18px height=18px src="./images/calander.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <div class="bars js-loadin">
+                                        <div style="display: none;">
+                                            <div class="bar-element js-loadin-demo">
+                                                <div class="bar">
+                                                    <div class="bar-grow"></div>
+                                                </div>
+                                                <div class="week-day"></div>
+                                            </div>
+                                        </div>
+                                        <div class="js-loadin-void">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-section">
+                        <h1 class="head">TOP Performers</h1>
+                        <div class="list-down">
+                            <div class="user-details container">
+                                <div class="spaced">
+                                    <div class="left">
+                                        <div class="icon round user-color-special-orange">
+                                            <img width=48 height=48 src="./images/user.png">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">User</div>
+                                            <div class="status">
+                                                Online&MediumSpace;
+                                                <span class="indicator-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" version="1.1">
+                                                        <circle cx="4" cy="4" r="4" fill="#00FF00" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="performance-rating high-mid">
+                                            4.3
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-seperator"></div>
+                            <div class="user-details container">
+                                <div class="spaced">
+                                    <div class="left">
+                                        <div class="icon round user-color-special-yellow">
+                                            <img width=48 height=48 src="./images/user.png">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">User</div>
+                                            <div class="status">
+                                                Online&MediumSpace;
+                                                <span class="indicator-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" version="1.1">
+                                                        <circle cx="4" cy="4" r="4" fill="#00FF00" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="performance-rating high-high">
+                                            4.7
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-seperator"></div>
+                            <div class="user-details container">
+                                <div class="spaced">
+                                    <div class="left">
+                                        <div class="icon round user-color-special-blue">
+                                            <img width=48 height=48 src="./images/user.png">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">User</div>
+                                            <div class="status">
+                                                2 Minutes ago
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="performance-rating high-mid">
+                                            4.4
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-section">
+                        <h1 class="head">Targeting by region</h1>
+                        <div class="body map-element">
+                            <img src="./images/map.png">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
