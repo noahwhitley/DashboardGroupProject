@@ -113,7 +113,7 @@ body {
   border-radius: 10px;
   padding: 20px 13px;
   margin-top: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -189,7 +189,7 @@ p span {
 .topcontainer {
   height: 38%;
   width: 94%;
-  padding: 30px;
+  padding: 26px;
   display: flex;
   justify-content: space-between;
 }
@@ -251,12 +251,13 @@ ul li {
 }
 
 .bottomcontainer {
+  padding: 0px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
   min-height: 200px;
-  width: 100%;
+  width: 95%;
   flex: 1 1 50px;
   margin-top: 5px;
 }
@@ -342,8 +343,7 @@ ul li {
   display: flex;
   flex-direction: column;
   align-content: center;
-  flex: 1 1 400px;
-  width: 400px;
+  flex: 1 1 200px;
 }
 .bottomcontainer .bar-graph .head {
   display: flex;
@@ -512,5 +512,57 @@ ul li {
 
 .insightsnavbold {
   opacity: 100%;
+  font-weight: 900;
+}
+
+.popularitycontainer {
+  height: 85%;
+  width: 28%;
+  background-color: #EDCCBB;
+  border-radius: 30px;
+  padding: 3%;
+  position: relative;
+}
+
+.popularitycontainer span {
+  color: black;
+  font-weight: 600;
+}
+
+.popularitycontainer h1 {
+  color: black;
+  font-size: 70px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  margin-bottom: 10%;
+}
+
+.popRank img {
+  height: 30%;
+  width: 30%;
+  display: flex;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+
+.visitors .fullStat {
+  background-color: #2A7B97;
+  color: black;
+  border-radius: 30px 0;
+  position: absolute;
+  right: -100px;
+  bottom: -15%;
+  height: 80px;
+  width: 300px;
+}
+
+.fullStat span {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
   font-weight: 900;
 }/*# sourceMappingURL=style.css.map */
