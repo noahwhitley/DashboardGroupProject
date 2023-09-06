@@ -1,3 +1,6 @@
+@use 'vars';
+
+
 * {
     margin: 0;
     padding: 0;
@@ -24,20 +27,12 @@ body {
     justify-content: center;
 }
 .sideBar {
-    height: 90%;
-    width: 7%;
-    background-image: linear-gradient(#4D7283, #698089 ) ;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    @extend %sidebar
 }
 #star {
     background-color: white;
     padding: 10px;
-    border-radius: 100%;
+    border-radius: vars.$circleradius ;
 }
 .logo {
     margin-top: 20px;
@@ -76,11 +71,10 @@ body {
     justify-content: space-between;
     margin: 0px 40px;
 }
-.user {
-    background-color: white;
+#user {
+    background-color: #F6C7B2;
     border-radius: 10px;
-    height: 40px;
-    width: 40px;
+    padding: 20px 13px;
     margin-top: 100px;
     margin-bottom: 20px;
 }
@@ -88,15 +82,15 @@ body {
     color: white;
     display: flex;
     align-items: center;
-}
-.backbutton div {
-    background-color: white;
-    padding: 7px 10px;
-    border-radius: 100%;
-}
-.backbutton p {
-    padding-left: 15px;
-    font-size: medium;
+    div {
+        background-color: white;
+        padding: 7px 10px;
+        border-radius: vars.$circleradius;
+    }
+    p {
+        padding-left: 15px;
+        font-size: medium;
+    }
 }
 .websitenav a {
     text-decoration: none;
@@ -106,14 +100,9 @@ body {
 .memberContainer {
     display: flex;
     align-items: center;
-}
-.member {
-    background-color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 100%;
-    margin: -6px;
-    border: 3px solid #4D7283;
+    .memberContainer :first-child {
+        background-color: rgb(247, 210, 192);
+    }
 }
 .memberContainer p {
     margin-left: 13px;
@@ -121,17 +110,33 @@ body {
     font-weight: 900;
     font-size: 12px;
 }
+#firstmember {
+    background-color: rgb(247, 210, 192);
+    padding: 9px 10px;
+    border-radius: vars.$circleradius;
+    margin: -6px;
+    border: 3px solid #4D7283;
+}
+.memberContainer :nth-child(2) {
+    background-color: rgb(232, 152, 107);
+    padding: 9px 10px;
+    border-radius: vars.$circleradius;
+    margin: -6px;
+    border: 3px solid #4D7283;
+}
+.memberContainer :nth-child(3) {
+    background-color: rgb(150,179,187);
+    padding: 9px 10px;
+    border-radius: vars.$circleradius;
+    margin: -6px;
+    border: 3px solid #4D7283;
+}
 p span {
     margin-left: 5px;
     font-weight: 100;
     opacity: 70%;
 }
-.websitenav :nth-child(2) {
-    opacity: 50%;
-}
-.websitenav :nth-child(3) {
-    opacity: 50%;
-}
+
 .topcontainer {
     height: 45%;
     width: 94%;
@@ -155,6 +160,7 @@ p span {
     width: 57%;
     border-radius: 25px;
     padding: 3%;
+    position: relative;
   }
   .visitors span {
     color: white;
@@ -188,3 +194,19 @@ p span {
     width: 300px;
     margin: 30px;
   }
+   .guy img {
+    position: absolute;
+    bottom: 0%;
+    right: 6%;
+    width: 43%;
+  }
+.insightsnav {
+    opacity: 50%;
+}
+.insightsnavbold {
+    opacity: 100%;
+    font-weight: 900;
+}
+.about {
+    @extend %circle;
+}
