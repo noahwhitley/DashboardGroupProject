@@ -10,10 +10,6 @@ html {
 }
 
 body {
-<<<<<<< HEAD
-  background-color: #4D7383;
-=======
->>>>>>> 1da3f1eefc74cd2b1942a048e2a3bab13d2c5d76
   background-color: #465D6C;
   height: 100%;
   width: 100%;
@@ -24,13 +20,10 @@ body {
 
 .mainContainer {
   height: 100%;
-<<<<<<< HEAD
   width: 70%;
-=======
   margin-left: 20px;
   margin-right: 20px;
   min-width: 70%;
->>>>>>> 1da3f1eefc74cd2b1942a048e2a3bab13d2c5d76
   margin-top: 115px;
   margin-bottom: 20px;
   display: flex;
