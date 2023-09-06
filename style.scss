@@ -73,10 +73,7 @@ body {
     border-bottom-right-radius: 30px;
 }
 .content {
-<<<<<<< HEAD
-=======
     overflow: scroll;
->>>>>>> 1da3f1eefc74cd2b1942a048e2a3bab13d2c5d76
     height: 88%;
     width: 99%;
     background-color: white;
@@ -213,35 +210,6 @@ p span {
     width: 300px;
     margin: 30px;
   }
-<<<<<<< HEAD
-  .contentContainer .topContainer .guy img {
-    position: absolute;
-    bottom: 0%;
-    right: 6%;
-    width: 43%;
-  }
-  .visitors .fullStat {
-    background-color: #2A7B97;
-    color: black;
-    border-radius: 25px 0px;
-    position: absolute;
-    right: -70px;
-    bottom: -50px;
-    height: 80px;
-    width: 250px;
-    text-align: center;
-  }
-  .fullStat span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    font-weight: 900;
-    color: black;
-  }
-=======
 
 
 $generalBorderRadius: 30px;
@@ -510,4 +478,3 @@ $generalBorderRadius: 30px;
         width: 100%;
     }
 }
->>>>>>> 1da3f1eefc74cd2b1942a048e2a3bab13d2c5d76
