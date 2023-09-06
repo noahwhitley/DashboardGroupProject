@@ -241,6 +241,14 @@ ul li {
   bottom: 0px;
 }
 
+.fullStat span {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+}
+
 .bottomcontainer {
   display: flex;
   flex-wrap: wrap;

@@ -208,7 +208,14 @@ p span {
     right: 1%;
     bottom: 0px;
   }
-  
+  .fullStat span {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+  }
+
 $generalBorderRadius: 30px;
 
 .bottomcontainer {
