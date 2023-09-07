@@ -1,0 +1,34 @@
+%navinstight {
+    opacity: 50%;
+}
+%circle {
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(#4D7283, #5f97ac ) ;
+    border-radius: 10%;
+    margin: 15px 50px;
+    border: 2px solid #effaff;
+}
+%sidebar{
+    height: 90%;
+    width: 7%;
+    background-image: linear-gradient(#4D7283, #698089 ) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-width: 90px;
+}
+.bottomcontainerInsights {
+    background-image: linear-gradient( #5f97ac,#4D7283 ) ;
+    height: 40%;
+    width: 80%;
+    margin: 0px auto;
+    border-radius: 30px;
+}
+
+$circleradius: 100%;
+
+

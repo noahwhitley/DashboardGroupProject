@@ -1,3 +1,6 @@
+@use 'vars';
+
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +19,7 @@ body {
     align-items: center;
 }
 .mainContainer{
-    height: 100%;
+    height: 105%;
     margin-left: 20px;
     margin-right: 20px;
     min-width: 70%;
@@ -26,21 +29,12 @@ body {
     justify-content: center;
 }
 .sideBar {
-    height: 90%;
-    width: 7%;
-    min-width: 90px;
-    background-image: linear-gradient(#4D7283, #698089 ) ;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    @extend %sidebar
 }
 #star {
     background-color: white;
     padding: 10px;
-    border-radius: 100%;
+    border-radius: vars.$circleradius ;
 }
 .logo {
     margin-top: 20px;
@@ -79,13 +73,12 @@ body {
     justify-content: space-between;
     margin: 0px 40px;
 }
-.user {
-    background-color: white;
+#user {
+    background-color: #F6C7B2;
     border-radius: 10px;
-    height: 40px;
-    width: 40px;
+    padding: 20px 13px;
     margin-top: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -95,15 +88,15 @@ body {
     color: white;
     display: flex;
     align-items: center;
-}
-.backbutton div {
-    background-color: white;
-    padding: 7px 10px;
-    border-radius: 100%;
-}
-.backbutton p {
-    padding-left: 15px;
-    font-size: medium;
+    div {
+        background-color: white;
+        padding: 7px 10px;
+        border-radius: vars.$circleradius;
+    }
+    p {
+        padding-left: 15px;
+        font-size: medium;
+    }
 }
 .websitenav a {
     text-decoration: none;
@@ -113,21 +106,8 @@ body {
 .memberContainer {
     display: flex;
     align-items: center;
-}
-.member {
-    background-color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 100%;
-    margin: -6px;
-    border: 3px solid #4D7283;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-        width: 32px;
-        height: 32px;
+    .memberContainer :first-child {
+        background-color: rgb(247, 210, 192);
     }
 }
 .memberContainer p {
@@ -136,21 +116,37 @@ body {
     font-weight: 900;
     font-size: 12px;
 }
+#firstmember {
+    background-color: rgb(247, 210, 192);
+    padding: 9px 10px;
+    border-radius: vars.$circleradius;
+    margin: -6px;
+    border: 3px solid #4D7283;
+}
+.memberContainer :nth-child(2) {
+    background-color: rgb(232, 152, 107);
+    padding: 9px 10px;
+    border-radius: vars.$circleradius;
+    margin: -6px;
+    border: 3px solid #4D7283;
+}
+.memberContainer :nth-child(3) {
+    background-color: rgb(150,179,187);
+    padding: 9px 10px;
+    border-radius: vars.$circleradius;
+    margin: -6px;
+    border: 3px solid #4D7283;
+}
 p span {
     margin-left: 5px;
     font-weight: 100;
     opacity: 70%;
 }
-.websitenav :nth-child(2) {
-    opacity: 50%;
-}
-.websitenav :nth-child(3) {
-    opacity: 50%;
-}
+
 .topcontainer {
-    height: 45%;
+    height: 38%;
     width: 94%;
-    padding: 30px;
+    padding: 26px;
     display: flex;
     justify-content: space-between;
 }
@@ -219,15 +215,15 @@ p span {
 $generalBorderRadius: 30px;
 
 .bottomcontainer {
-
+    padding: 0px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     min-height: 200px;
-    width: 100%;
+    width: 95%;
     flex: 1 1 50px;
-    margin-top: 15px;
+    margin-top: 5px;
 
     .user-color-special-orange {
         background-color: #EEAE91;
@@ -300,7 +296,7 @@ $generalBorderRadius: 30px;
     }
 
     .small-section {
-        flex: 1 0 400px;
+        flex: 1 0 200px;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -324,8 +320,7 @@ $generalBorderRadius: 30px;
         display: flex;
         flex-direction: column;
         align-content: center;
-        flex: 1 1 400px;
-        width: 400px;
+        flex: 1 1 200px;
         .head {
             .left, .right {
                 display: flex;
@@ -482,3 +477,74 @@ $generalBorderRadius: 30px;
         width: 100%;
     }
 }
+   .guy img {
+    position: absolute;
+    bottom: 0%;
+    right: 6%;
+    width: 43%;
+  }
+.insightsnav {
+    opacity: 50%;
+}
+.insightsnavbold {
+    opacity: 100%;
+    font-weight: 900;
+}
+.about {
+    @extend %circle;
+}
+.popularitycontainer {
+    height: 85%;
+    width: 28%;
+    background-color: #EDCCBB;
+    border-radius: 30px;
+    padding: 3%;
+    position: relative;
+}
+  .popularitycontainer span {
+    color: black;
+    font-weight: 600;
+  }
+  .popularitycontainer h1 {
+    color: black;
+    font-size: 70px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    margin-bottom: 10%;
+  }
+  .popRank img {
+    height: 30%;
+    width: 30%;
+    display: flex;
+    object-fit: contain;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+  }
+.visitors .fullStat {
+    background-color: #2A7B97;
+    color: black;
+    border-radius: 30px 0 ;
+    position: absolute;
+    right: -100px;
+    bottom: -15%;
+    height: 80px;
+    width: 300px;
+    
+  }
+.fullStat span {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+  }
+
+
+
+
+
+
+
+
+
