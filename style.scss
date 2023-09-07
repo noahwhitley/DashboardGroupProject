@@ -212,6 +212,10 @@ p span {
     font-weight: 900;
   }
 
+.user-icon {
+    color: #ffffff;
+}
+
 $generalBorderRadius: 30px;
 
 .bottomcontainer {
@@ -234,7 +238,6 @@ $generalBorderRadius: 30px;
     .user-color-special-blue {
         background-color: #93B3B9;
     }
-    
     
     .spaced {
         display: flex;
@@ -286,8 +289,7 @@ $generalBorderRadius: 30px;
         width: 100%;
         height: 100%;
         .load {
-            rotate: 360deg;
-            transition: rotate Infinite 3s;
+            background-color: rgba(90, 90, 90, 0.5);
         }
     }
     
@@ -445,6 +447,10 @@ $generalBorderRadius: 30px;
         .icon {
             width: 48px;
             height: 48px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .performance-rating {
             display: flex;
