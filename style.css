@@ -242,12 +242,31 @@ ul li {
 .visitors .fullStat {
   background-color: #2A7B97;
   color: black;
+  border-radius: 30px 0;
   position: absolute;
-  left: 50%;
-  bottom: 40%;
+  right: -7%;
+  bottom: -15%;
   height: 80px;
   width: 300px;
   margin: 30px;
+}
+
+.guy {
+  position: absolute;
+  right: 1%;
+  bottom: 0px;
+}
+
+.fullStat span {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+}
+
+.user-icon {
+  color: #ffffff;
 }
 
 .bottomcontainer {
@@ -314,8 +333,7 @@ ul li {
   height: 100%;
 }
 .bottomcontainer .js-loadin-void .load {
-  rotate: 360deg;
-  transition: rotate Infinite 3s;
+  background-color: rgba(90, 90, 90, 0.5);
 }
 .bottomcontainer .js-loadin-demo {
   display: none;
@@ -468,6 +486,10 @@ ul li {
 .bottomcontainer .user-details.container .icon {
   width: 48px;
   height: 48px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bottomcontainer .user-details.container .performance-rating {
   display: flex;
